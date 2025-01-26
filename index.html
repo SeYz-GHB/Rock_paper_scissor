@@ -15,9 +15,9 @@
 
         <p class="font-bold bg-yellow-400 mb-4 text-black" >Rock Paper Scissors</p>
         <div class="flex justify-center cursor-pointer flex-wrap">
-            <img src="Rockpaperscissors_img/rock.png" alt="" class="max-w-20" onclick="playGame('Rock')" id="rock">
-            <img src="Rockpaperscissors_img/paper.png" alt="" class="max-w-20" onclick="playGame('Paper')" id="paper">
-            <img src="Rockpaperscissors_img/Scissor.png" alt="" class="max-w-20" onclick="playGame('Scissor')" id="scissor">
+            <img src="rock.png" alt="" class="max-w-20" onclick="playGame('Rock')" id="rock">
+            <img src="paper.png" alt="" class="max-w-20" onclick="playGame('Paper')" id="paper">
+            <img src="Scissor.png" alt="" class="max-w-20" onclick="playGame('Scissor')" id="scissor">
 
         </div>
         <p class="js-result text-red-300 font-bold"></p>
@@ -81,8 +81,8 @@
            /* alert(`You chose ${playerMove}, computer chose ${computerMove}. ${result}`); */
            
            document.querySelector('.js-result').innerHTML = result;
-           document.querySelector('.js-move').innerHTML = `You <img src="Rockpaperscissors_img/${playerMove}.png" class="max-w-20 container" alt="">
-             <img src="Rockpaperscissors_img/${computerMove}.png" class="max-w-20 container" alt="">Pisey`;
+           document.querySelector('.js-move').innerHTML = `You <img src="${playerMove}.png" class="max-w-20 container" alt="">
+             <img src="${computerMove}.png" class="max-w-20 container" alt="">Pisey`;
         }
         function updateScoreElement(){
             document.querySelector('.js-score').innerHTML = `wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
